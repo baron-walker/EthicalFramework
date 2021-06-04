@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Name = "Virtue Ethics";
+    ViewBag.Description = "This character-based approach to morality assumes that we acquire virtue through practice. By practicing " +
+                "being honest, brave, just, generous, and so on, a person develops an honorable and moral character. According to " +
+                "Aristotle, by honing virtuous habits, people will likely make the right choice when faced with ethical challenges. To " +
+                "illustrate the difference among three key moral philosophies, ethicists Mark White and Robert Arp refer to the film " +
+                "The Dark Knight where Batman has the opportunity to kill the Joker. A virtue ethicist would highlight the character " +
+                "of the person who kills the Joker. Does Batman want to be the kind of person who takes his enemies’ lives ?” No, he doesn’t.";
+}
+
+<div class="display-4 pb-4 text-center">Results</div>
+<div class="card w-50 text-center m-auto rounded">
+    <div class="card-body">
+        <span class="lead">Based on your answers, you adhere to the <span class="font-weight-bold">@ViewBag.Name</span> ethical framework.</span><br /><br />
+        <span class="">@ViewBag.Description</span><br /><br />
+        <a class="btn-dark rounded p-2" asp-action="Quiz">Take the Quiz Again</a>
+    </div>
+</div>

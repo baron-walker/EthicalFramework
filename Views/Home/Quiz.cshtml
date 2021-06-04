@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model EthicalFramework.Models.Quiz
+    <h1 class="display-4">Quiz</h1>
+
+    <form asp-controller="Home" asp-action="Quiz" method="post">
+        <div class="card w-75 text-left m-auto p-1">
+            <div class="row">
+                <div class="lead pl-4 pr-4">
+                    An ethical dilemma is a situation in which you come up against competing values. The way you respnd to these situations helps determine how you see the world.
+                    Ethical frameworks are simplified descriptions for how you might see the world.<br /><br />
+                </div>
+                <label class="lead pl-4 pr-4"><span class="font-weight-bold">Question 1:</span><br> When you are faced with an ethical dilemma, what are you LEAST LIKELY to consider when responding?</label>
+                <div class="pl-4">
+                    <input type="radio" id="1a" name="question1" value="A">
+                    <label for="1a">A. Justice and dignity</label><br>
+                    <input type="radio" id="1b" name="question1" value="B">
+                    <label for="1b">B. Utility and the greatest benefit for others</label><br>
+                    <input type="radio" id="1c" name="question1" value="C">
+                    <label for="1c">C. Personal virtues and integrity</label><br>
+                    <input type="radio" id="1d" name="question1" value="D">
+                    <label for="1d">D. Social obligations and norms</label><br>
+                    <input type="radio" id="1e" name="question1" value="E">
+                    <label for="1e">E. Care of others and your relationships with them</label><br>
+                </div>
+            </div>
+            <br /><br />
+            <div class="row">
+                <label class="lead pl-4"><span class="font-weight-bold">Question 2:</span><br> When you are faced with an ethical dilemma, what are you MOST LIKELY to consider when responding?</label>
+                <div class="pl-4">
+                    <input type="radio" id="2a" name="question2" value="A">
+                    <label for="2a">A. It could be made as a universal. I would be okay if everyone did it this way.</label><br>
+                    <input type="radio" id="2b" name="question2" value="B">
+                    <label for="2b">B. It brings the greatest benefit for the people or group as a whole.</label><br>
+                    <input type="radio" id="2c" name="question2" value="C">
+                    <label for="2c">C. It is consistent with my values and helps me or others grow in a positive manner.</label><br>
+                    <input type="radio" id="2d" name="question2" value="D">
+                    <label for="2d">D. It fulfills my duty to society and contributes in a positive, meaningful manner.</label><br>
+                    <input type="radio" id="2e" name="question2" value="E">
+                    <label for="2e">E. It satisfies the needs of those who are most vulnerable or those who I care about most in my life.</label><br>
+                </div>
+            </div>
+            <br /><br />
+            <div class="row">
+                <label class="lead pl-4 pr-4"><span class="font-weight-bold">Question 3:</span><br> You work for a large corporation and you like your job. You caught one of your coworkers, a close friend who you know is struggling financially, using their company card for many personal expenses, which violates company policy. You decided to confront your friend about it and report it to your boss. What was your reasoning?</label>
+                <div class="pl-4">
+                    <input type="radio" id="3a" name="question3" value="A">
+                    <label for="3a">A. Rules are important and if they are broken, justice must follow.</label><br>
+                    <input type="radio" id="3b" name="question3" value="B">
+                    <label for="3b">B. Your friend's choice affects the entire company negatively. Reporting their behavior will do the greatest good.</label><br>
+                    <input type="radio" id="3c" name="question3" value="C">
+                    <label for="3c">C. You value honesty and integrity and want to stay true to your values.</label><br>
+                    <input type="radio" id="3d" name="question3" value="D">
+                    <label for="3d">D. It is your duty as an employee to follow the rules and help others to do so.</label><br>
+                    <input type="radio" id="3e" name="question3" value="E">
+                    <label for="3e">E. You care about your friend enough to make a tough decision that will put them on a better path in the long run.</label><br>
+                </div>
+            </div>
+            <br /><br />
+            <input type="submit" />
+        </div>
+    </form>

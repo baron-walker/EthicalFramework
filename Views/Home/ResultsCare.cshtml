@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Name = "Ethics of Care";
+    ViewBag.Description = "The moral theory known as “ the ethics of care” implies that there is moral significance in the " +
+                "fundamental elements of relationships and dependencies in human life. Normatively, care ethics seeks to " +
+                "maintain relationships by contextualizing and promoting the well-being of care-givers and care-receivers " +
+                "in a network of social relations. Most often defined as a practice or virtue rather than a theory as such, care " +
+                "involves maintaining the world of, and meeting the needs of, ourself and others. It builds on the motivation to " +
+                "care for those who are dependent and vulnerable, and it is inspired by both memories of being cared for and the " +
+                "idealizations of self.";
+}
+
+<div class="display-4 pb-4 text-center">Results</div>
+<div class="card w-50 text-center m-auto rounded">
+    <div class="card-body">
+        <span class="lead">Based on your answers, you adhere to the <span class="font-weight-bold">@ViewBag.Name</span> ethical framework.</span><br /><br />
+        <span class="">@ViewBag.Description</span><br /><br />
+        <a class="btn-dark rounded p-2" asp-action="Quiz">Take the Quiz Again</a>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Name = "Social Contract";
+    ViewBag.Description = "Social contract theory says that people live together in society in accordance with an agreement " +
+                "that establishes moral and political rules of behavior. Some people believe that if we live according to a " +
+                "social contract, we can live morally by our own choice and not because a divine being requires it. Social " +
+                "contracts can be explicit, such as laws, or implicit, such as raising one’s hand in class to speak. The U.S. " +
+                "Constitution is often cited as an explicit example of part of America’s social contract.  It sets out what the " +
+                "government can and cannot do. People who choose to live in America agree to be governed by the moral and political " +
+                "obligations outlined in the Constitution’s social contract.";
+}
+
+<div class="display-4 pb-4 text-center">Results</div>
+<div class="card w-50 text-center m-auto rounded">
+    <div class="card-body">
+        <span class="lead">Based on your answers, you adhere to the <span class="font-weight-bold">@ViewBag.Name</span> ethical framework.</span><br /><br />
+        <span class="">@ViewBag.Description</span><br /><br />
+        <a class="btn-dark rounded p-2" asp-action="Quiz">Take the Quiz Again</a>
+    </div>
+</div>

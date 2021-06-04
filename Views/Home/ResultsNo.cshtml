@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Name = "Inconclusive";
+    ViewBag.Description = "Your choices did not adhere to any of the five traditional ethical frameworks. You are welcome to take the quiz " +
+                "again and try different answers for a more conclusive result.";
+}
+
+<div class="display-4 pb-4 text-center">Results</div>
+<div class="card w-50 text-center m-auto rounded">
+    <div class="card-body">
+        <span class="lead">Based on your answers, your results are <span class="font-weight-bold">@ViewBag.Name</span>.</span><br /><br />
+        <span class="">@ViewBag.Description</span><br /><br />
+        <a class="btn-dark rounded p-2" asp-action="Quiz">Take the Quiz Again</a>
+    </div>
+</div>

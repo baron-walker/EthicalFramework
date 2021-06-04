@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Name = "Utilitarianism";
+    ViewBag.Description = "Utilitarianism is an ethical theory that determines right from wrong by focusing on outcomes. " +
+                "It is a form of consequentialism. Utilitarianism holds that the most ethical choice is the one that will " +
+                "produce the greatest good for the greatest number. It is the only moral framework that can be used to justify " +
+                "military force or war. It is also the most common approach to moral reasoning used in business because of the " +
+                "way in which it accounts for costs and benefits.";
+}
+
+<div class="display-4 pb-4 text-center">Results</div>
+<div class="card w-50 text-center m-auto rounded">
+    <div class="card-body">
+        <span class="lead">Based on your answers, you adhere to the <span class="font-weight-bold">@ViewBag.Name</span> ethical framework.</span><br /><br />
+        <span class="">@ViewBag.Description</span><br /><br />
+        <a class="btn-dark rounded p-2" asp-action="Quiz">Take the Quiz Again</a>
+    </div>
+</div>
